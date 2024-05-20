@@ -1,0 +1,18 @@
+<!-- templates/blogs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center text-[50px]">All Blogs</h1>
+    <ul class="px-[30px] py-[10px] text-justify">
+        {% for blog in blogs %}
+            <li class="text-[25px] font-normal">{{ blog.title }} - {{ blog.created_at }}</li>
+            <p class="my-[10px]">{{ blog.description }}</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
