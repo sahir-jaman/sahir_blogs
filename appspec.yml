@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
-files: 
+files:
   - source: /
     destination: /home/ubuntu/sahir_blogs
     overwrite: yes
