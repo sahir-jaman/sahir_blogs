@@ -3,12 +3,16 @@ os: linux
 files: 
   - source: /
     destination: /home/ubuntu/sahir_blogs
+    overwrite: yes
 permissions:
   - object: /home/ubuntu/sahir_blogs
     owner: ubuntu
     group: ubuntu
 hooks:
   BeforeInstall:
+    - location: scripts/set_permissions.sh
+      timeout: 300
+      runas: ubuntu
     - location: scripts/clean_instance.sh
       timeout: 300
       runas: ubuntu
