@@ -3,6 +3,7 @@ os: linux
 files: 
   - source: /
     destination: /home/ubuntu/sahir_blogs
+    overwrite: yes
 permissions:
   - object: /home/ubuntu/sahir_blogs
     owner: ubuntu
