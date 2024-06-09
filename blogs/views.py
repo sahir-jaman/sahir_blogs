@@ -6,4 +6,4 @@ def hello(request):
     blogs = Blog.objects.all()
 
     # Render the 'blogs.html' template with the list of blogs
-    return render(request, 'home.html', {'blogs': blogs})
+    return render(request, 'blogs.html', {'blogs': blogs})

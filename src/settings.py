@@ -42,11 +42,15 @@ INSTALLED_APPS = [
     #Local apps
     'rest_framework',
     'blogs',
+    'home',
 
     #tailwind setup
     'tailwind',
     'theme',
-    'django_browser_reload'
+    'django_browser_reload',
+
+    #fontawesome
+    'fontawesomefree',
 
 ]
 
