@@ -2,9 +2,10 @@
 
 sed -i 's/\[]/\["54.144.250.113"]/' /home/ubuntu/sahir_blogs/src/settings.py
 
-python manage.py makemigrations     
-python manage.py migrate 
-python manage.py collectstatic
+python3 manage.py makemigrations     
+python3 manage.py migrate 
+python3 manage.py collectstatic
+python3 manage.py tailwind start
 sudo service gunicorn restart
 sudo service nginx restart
 #sudo tail -f /var/log/nginx/error.log
